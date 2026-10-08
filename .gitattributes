@@ -1,0 +1,37 @@
+# Normalize source text independently of each developer's core.autocrlf.
+* text=auto
+
+*.cs text eol=lf
+*.xaml text eol=lf
+*.csproj text eol=lf
+*.slnx text eol=lf
+*.json text eol=lf
+*.mjs text eol=lf
+*.js text eol=lf
+*.css text eol=lf
+*.html text eol=lf
+*.md text eol=lf
+*.py text eol=lf
+*.txt text eol=lf
+.gitignore text eol=lf
+.gitattributes text eol=lf
+.editorconfig text eol=lf
+
+# Windows PowerShell 5.1 remains a supported script entry point.
+*.ps1 text eol=crlf
+
+# Keep third-party license texts in their original byte representation.
+docs/licenses/** -text -eol
+
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary
+*.zip binary
+*.wbarchive binary
+*.whiteboard binary
+*.woff binary
+*.woff2 binary
+*.svg text eol=lf

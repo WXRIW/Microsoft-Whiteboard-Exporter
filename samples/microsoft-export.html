@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><title>微软导出兼容结构示例</title>
+<style>
+body{font-family:"Segoe UI","Microsoft YaHei",sans-serif;margin:0}
+.anchor{position:absolute;width:0;height:0;transform-origin:0 0}
+.textBoxCore{font-family:"Segoe UI","Microsoft YaHei",sans-serif;color:#242424}
+.stickyNote{width:304px;min-height:240px;background:#fff1a8;padding:24px;font-size:25px;box-sizing:border-box}
+.plainText{width:1000px;font-size:52px;font-weight:700;color:#163365}
+</style></head><body>
+<!-- Hand-authored fixture with Microsoft export anchors; no real account data. -->
+<div id="canvasContent" data-whiteboard-canvas style="background:#fff">
+  <div class="anchor" data-whiteboard-type="Shape" data-whiteboard-id="marker-red" style="left:-500px;top:-200px"><svg width="64" height="64" viewBox="0 0 64 64"><rect width="64" height="64" fill="#ef4444"/></svg></div>
+  <div class="anchor" data-whiteboard-type="Shape" data-whiteboard-id="marker-green" style="left:1750px;top:-200px"><svg width="64" height="64" viewBox="0 0 64 64"><rect width="64" height="64" fill="#22c55e"/></svg></div>
+  <div class="anchor" data-whiteboard-type="Shape" data-whiteboard-id="marker-blue" style="left:-500px;top:1100px"><svg width="64" height="64" viewBox="0 0 64 64"><rect width="64" height="64" fill="#3b82f6"/></svg></div>
+  <div class="anchor" data-whiteboard-type="PlainText" data-whiteboard-id="title" style="left:-330px;top:-50px"><div class="plainText textBoxCore"><div data-block>微软白板导出与离线重绘</div></div></div>
+  <div class="anchor" data-whiteboard-type="Note" data-whiteboard-id="note" style="left:-300px;top:150px;transform:matrix(0.9961947,0.0871557,-0.0871557,0.9961947,0,0)"><div class="textBoxBackground softYellowGradient"><div class="stickyNote textBoxCore"><div data-block>待办事项</div><div data-block>保存原始数据</div><div data-block>导出 PDF 和图片</div><div data-block>断网重新绘制</div></div><div class="authorBar">示例作者</div></div></div>
+  <div class="anchor" data-whiteboard-type="InkGroup" data-whiteboard-id="ink" style="left:150px;top:200px"><svg width="380" height="140" viewBox="0 0 380 140"><path d="M10 90C50 10 110 130 155 35C190 -5 218 115 270 40C320 -15 330 80 365 25" fill="none" stroke="#1754ad" stroke-width="10" stroke-linecap="round"/><path d="M12 118C110 126 220 98 360 123L363 135C210 113 114 140 12 130Z" fill="#1754ad"/></svg></div>
+  <div class="anchor" data-whiteboard-type="Highlighter" data-whiteboard-id="highlight" style="left:150px;top:360px;opacity:0.45"><svg width="380" height="50" viewBox="0 0 380 50"><path d="M12 22H365" stroke="#fbbf24" stroke-width="30" stroke-linecap="round"/></svg></div>
+  <div class="anchor" data-whiteboard-type="FluidImage" data-whiteboard-id="image" style="left:920px;top:300px"><div class="imageComponent" style="width:540px;height:270px"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+a4GQAAAAASUVORK5CYII=" width="540" height="270" alt="已嵌入的测试图片"/></div></div>
+  <div class="anchor" data-whiteboard-type="Table" data-whiteboard-id="table" style="left:-280px;top:560px"><table style="width:760px;border-collapse:collapse;font:24px/1.5 Segoe UI,Microsoft YaHei,sans-serif;color:#334155"><tr style="background:#dbeafe"><th style="border:2px solid #94a3b8;padding:15px">输出格式</th><th style="border:2px solid #94a3b8;padding:15px">用途</th></tr><tr><td style="border:2px solid #94a3b8;padding:15px">JSON 与资源</td><td style="border:2px solid #94a3b8;padding:15px">独立重绘</td></tr><tr><td style="border:2px solid #94a3b8;padding:15px">PDF 和图片</td><td style="border:2px solid #94a3b8;padding:15px">阅读与分享</td></tr></table></div>
+  <div class="anchor" data-whiteboard-type="Group" data-whiteboard-id="outer-group" style="left:680px;top:560px">
+    <div class="anchor" data-whiteboard-type="Shape" data-whiteboard-id="group-frame"><svg width="480" height="300" viewBox="0 0 480 300"><rect width="480" height="300" rx="20" fill="#f0fdf4" stroke="#86c69e" stroke-width="3"/></svg></div>
+    <div class="anchor" data-whiteboard-type="Group" data-whiteboard-id="nested-group" style="left:25px;top:30px">
+      <div class="anchor" data-whiteboard-type="GridList" data-whiteboard-id="list"><div style="width:420px;font:25px/1.7 Segoe UI,Microsoft YaHei,sans-serif;color:#166534"><strong>嵌套分组</strong><ul><li>图层顺序</li><li>六参数变换</li><li>完整画布导出</li></ul></div></div>
+    </div>
+  </div>
+  <div class="anchor" data-whiteboard-type="Connector" data-whiteboard-id="connector" style="left:500px;top:650px"><svg width="160" height="80" viewBox="0 0 160 80"><path d="M5 40H130" stroke="#64748b" stroke-width="7"/><path d="M108 18L138 40L108 62" stroke="#64748b" stroke-width="7" fill="none"/></svg></div>
+  <div class="anchor" data-whiteboard-type="Hyperlink" data-whiteboard-id="link" style="left:-280px;top:900px"><div style="width:1000px;background:#f8fafc;border:2px solid #cbd5e1;border-radius:12px;padding:20px;font:24px/1.5 Segoe UI,Microsoft YaHei,sans-serif"><strong>项目资料</strong><br/><a href="https://github.com/sql-bi/SQLBI-Whiteboard">https://github.com/sql-bi/SQLBI-Whiteboard</a></div></div>
+  <div class="anchor" data-whiteboard-type="CommentThread" data-whiteboard-id="comment" style="left:1270px;top:500px"><span aria-label="Comment hint: thread-1">评论</span></div>
+</div></body></html>

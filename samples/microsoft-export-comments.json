@@ -1,0 +1,7 @@
+{
+  "commentThreads": [
+    { "id": "thread-1", "comments": [
+      { "author": { "name": "示例作者" }, "body": "评论正文与画布分开存储。\n重绘应保留中文与换行。", "displayDate": "2026-10-08" }
+    ] }
+  ]
+}

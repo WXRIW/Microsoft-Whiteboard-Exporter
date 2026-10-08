@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "board": { "id": "demo-offline-2026", "title": "白板导出 · 离线重绘示例" },
+  "bounds": { "x": -524, "y": -224, "width": 2348, "height": 1424 },
+  "background": "#ffffff",
+  "elements": [
+    { "id": "marker-red", "kind": "shape", "z": 0, "transform": [1,0,0,1,-500,-200], "bounds": {"x":0,"y":0,"width":64,"height":64}, "svg": "<rect x='0' y='0' width='64' height='64' fill='#ef4444'/>" },
+    { "id": "marker-green", "kind": "shape", "z": 1, "transform": [1,0,0,1,1750,-200], "bounds": {"x":0,"y":0,"width":64,"height":64}, "svg": "<rect x='0' y='0' width='64' height='64' fill='#22c55e'/>" },
+    { "id": "marker-blue", "kind": "shape", "z": 2, "transform": [1,0,0,1,-500,1100], "bounds": {"x":0,"y":0,"width":64,"height":64}, "svg": "<rect x='0' y='0' width='64' height='64' fill='#3b82f6'/>" },
+    { "id": "heading", "kind": "text", "z": 3, "transform": [1,0,0,1,-330,-80], "bounds": {"x":0,"y":0,"width":1050,"height":110}, "html": "<div style='width:1050px;font:700 64px/1.3 Segoe UI,Microsoft YaHei,sans-serif;color:#163365'>微软白板，离线继续查看</div>", "text": "微软白板，离线继续查看" },
+    { "id": "note", "kind": "note", "z": 4, "transform": [0.9961947,0.0871557,-0.0871557,0.9961947,-300,130], "bounds": {"x":0,"y":0,"width":340,"height":300}, "html": "<div style='width:340px;height:300px;box-sizing:border-box;background:#fff1a8;padding:28px;font:28px/1.5 Segoe UI,Microsoft YaHei,sans-serif;color:#3f3a18;border:1px solid #e5d67d;border-radius:3px'>待办事项<br/>① 保存原始数据<br/>② 导出 PDF 和图片<br/>③ 断网重新绘制<br/><strong>中文内容保留</strong></div>", "text": "待办事项\n保存原始数据\n导出 PDF 和图片\n断网重新绘制\n中文内容保留" },
+    { "id": "ink", "kind": "ink", "z": 5, "transform": [1,0,0,1,120,170], "bounds": {"x":0,"y":0,"width":400,"height":145}, "svg": "<path d='M 10 90 C 50 10 110 130 155 35 C 190 -5 218 115 270 40 C 320 -15 330 80 380 25' fill='none' stroke='#1754ad' stroke-width='10' stroke-linecap='round'/><path d='M12 118 C110 126 220 98 370 123 L373 135 C210 113 114 140 12 130 Z' fill='#1754ad'/>" },
+    { "id": "highlight", "kind": "highlighter", "z": 6, "transform": [1,0,0,1,120,310], "bounds": {"x":0,"y":0,"width":390,"height":42}, "style":{"opacity":0.45}, "svg":"<path d='M12 20 H375' stroke='#fbbf24' stroke-width='30' stroke-linecap='round'/>" },
+    { "id": "local-image", "kind": "image", "z": 7, "transform": [1,0,0,1,650,155], "bounds": {"x":0,"y":0,"width":540,"height":270}, "assetId":"demo-card", "html":"<img src='wbasset:demo-card' data-wb-asset='demo-card' style='width:540px;height:270px;object-fit:contain' alt='已嵌入的本地图像'/>" },
+    { "id":"table", "kind":"table", "z":8, "transform":[1,0,0,1,-280,520], "bounds":{"x":0,"y":0,"width":800,"height":230}, "html":"<table style='width:800px;border-collapse:collapse;font:24px/1.5 Segoe UI,Microsoft YaHei,sans-serif;color:#334155'><tr style='background:#dbeafe'><th style='border:2px solid #94a3b8;padding:15px'>输出格式</th><th style='border:2px solid #94a3b8;padding:15px'>用途</th></tr><tr><td style='border:2px solid #94a3b8;padding:15px'>JSON + 资源</td><td style='border:2px solid #94a3b8;padding:15px'>独立重新绘制</td></tr><tr><td style='border:2px solid #94a3b8;padding:15px'>PDF / PNG / JPEG</td><td style='border:2px solid #94a3b8;padding:15px'>阅读、打印、分享</td></tr></table>", "text":"输出格式\t用途\nJSON + 资源\t独立重新绘制\nPDF / PNG / JPEG\t阅读、打印、分享" },
+    { "id":"group", "kind":"group", "z":9, "transform":[1,0,0,1,660,560], "bounds":{"x":0,"y":0,"width":470,"height":310}, "children":[
+      {"id":"group-frame","kind":"shape","z":0,"transform":[1,0,0,1,0,0],"bounds":{"x":0,"y":0,"width":470,"height":310},"svg":"<rect width='470' height='310' rx='24' fill='#f0fdf4' stroke='#86c69e' stroke-width='3'/><text x='25' y='50' fill='#166534' font-family='Segoe UI,Microsoft YaHei,sans-serif' font-size='26'>嵌套分组</text>"},
+      {"id":"nested-group","kind":"group","z":1,"transform":[1,0,0,1,25,85],"bounds":{"x":0,"y":0,"width":420,"height":195},"children":[
+        {"id":"group-list","kind":"list","z":0,"transform":[1,0,0,1,0,0],"bounds":{"x":0,"y":0,"width":420,"height":180},"html":"<ul style='width:380px;margin:0;padding:18px 25px 18px 42px;font:24px/1.7 Segoe UI,Microsoft YaHei,sans-serif;color:#166534'><li>保留图层顺序</li><li>保留六参数变换</li><li>完整画布导出</li></ul>","text":"保留图层顺序\n保留六参数变换\n完整画布导出"}
+      ]}
+    ]},
+    {"id":"connector","kind":"connector","z":10,"transform":[1,0,0,1,500,620],"bounds":{"x":0,"y":0,"width":145,"height":70},"svg":"<path d='M5 30 H125' fill='none' stroke='#64748b' stroke-width='7'/><path d='M105 12 L132 30 L105 48' fill='none' stroke='#64748b' stroke-width='7' stroke-linejoin='round'/>"},
+    {"id":"link","kind":"link","z":11,"transform":[1,0,0,1,-280,850],"bounds":{"x":0,"y":0,"width":1400,"height":140},"html":"<div style='width:1400px;box-sizing:border-box;background:#f8fafc;border:2px solid #cbd5e1;border-radius:12px;padding:24px;font:24px/1.5 Segoe UI,Microsoft YaHei,sans-serif;color:#334155'><strong>公开数据格式</strong><br/>SceneDocument v1 · SVG 几何 / HTML 排版 / 图片资源 · 无需微软账号</div>","text":"公开数据格式\nSceneDocument v1 · SVG 几何 / HTML 排版 / 图片资源 · 无需微软账号"}
+  ],
+  "assets":{"demo-card":{"path":"assets/demo-card.svg","mime":"image/svg+xml"}},
+  "diagnostics":{"status":"complete","total":15,"supported":15,"unsupported":0,"missingAssets":[],"items":[]}
+}

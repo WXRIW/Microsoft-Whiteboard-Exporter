@@ -1,0 +1,69 @@
+# .NET build and publish outputs
+[Bb]in/
+[Oo]bj/
+/artifacts/
+/output/
+/exports/
+/backups/
+
+# Local development history and agent workspace state
+/docs/history/
+/docs/ACCEPTANCE-*.md
+/.agents/
+/.codex/
+
+# Visual Studio and local editor state
+.vs/
+.idea/
+*.user
+*.suo
+*.rsuser
+*.userosscache
+*.sln.docstates
+*.userprefs
+*.DotSettings.user
+
+# Test results, diagnostics and optional development dependencies
+[Tt]est[Rr]esults/
+coverage/
+*.trx
+*.coverage
+*.coveragexml
+*.binlog
+*.log
+*.dmp
+node_modules/
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Private whiteboard exports, account manifests and browser sessions
+*.wbarchive
+*.whiteboard
+*.zip
+*.previous-*
+account.json
+export-state.json
+profiles/
+Browser/
+EBWebView/
+private-regression/
+private-fixtures/
+
+# Local environment settings and credentials
+.env
+.env.*
+!.env.example
+*.pfx
+*.p12
+
+# Temporary files and operating-system metadata
+*.tmp
+*.temp
+*.partial
+*.bak
+*~
+Thumbs.db
+Desktop.ini
+.DS_Store

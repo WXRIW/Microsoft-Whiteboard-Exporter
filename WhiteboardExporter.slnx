@@ -1,0 +1,31 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/WhiteboardExporter.App/WhiteboardExporter.App.csproj" />
+    <Project Path="src/WhiteboardExporter.Core/WhiteboardExporter.Core.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/WhiteboardExporter.Tests/WhiteboardExporter.Tests.csproj" />
+    <Project Path="tests/WhiteboardExporter.ImageTests/WhiteboardExporter.ImageTests.csproj" />
+  </Folder>
+  <Folder Name="/Solution Items/">
+    <File Path=".editorconfig" />
+    <File Path=".gitattributes" />
+    <File Path=".gitignore" />
+    <File Path="global.json" />
+    <File Path="README.md" />
+    <File Path="THIRD-PARTY-NOTICES.md" />
+  </Folder>
+  <Folder Name="/docs/">
+    <File Path="docs/ACCEPTANCE.md" />
+    <File Path="docs/SCENE-FORMAT.md" />
+    <File Path="docs/minimal-redraw.html" />
+  </Folder>
+  <Folder Name="/scripts/">
+    <File Path="scripts/build.ps1" />
+    <File Path="scripts/run.ps1" />
+    <File Path="scripts/publish.ps1" />
+    <File Path="scripts/package-source.ps1" />
+    <File Path="scripts/test.ps1" />
+    <File Path="scripts/verify-pdf-output.py" />
+  </Folder>
+</Solution>

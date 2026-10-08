@@ -1,0 +1,11 @@
+:root{font-family:"Segoe UI","Microsoft YaHei",sans-serif;color:#32445c;background:#edf1f6;color-scheme:light}
+*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden}
+#viewport{width:100%;height:100%;overflow:hidden;position:relative;background-color:#edf1f6;background-image:radial-gradient(#cad3e0 1px,transparent 1px);background-size:20px 20px;cursor:grab;touch-action:none;user-select:none}
+#viewport.dragging{cursor:grabbing}#stage{position:absolute;top:0;left:0;transform-origin:0 0;box-shadow:0 8px 32px #33455f18;line-height:0;background:white}
+#stage svg{display:block}#empty{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#627089;line-height:1.8}
+#empty strong{font-size:19px;font-weight:500}#empty p{font-size:14px;margin:8px 0}.empty-icon{font-size:48px;color:#7795c0;margin-bottom:14px}
+#print-root{display:none}body.exporting #viewport{background:none;cursor:default;overflow:visible}body.exporting #stage{transform:none!important;box-shadow:none;position:static}
+body.exporting #empty{display:none}body.exporting,body.exporting #viewport{width:var(--export-width);height:var(--export-height);overflow:hidden;background:transparent}
+body.printing #viewport{display:none}body.printing #print-root{display:block}body.printing,body.printing html{overflow:visible;height:auto;background:white}
+.print-page{position:relative;overflow:hidden;background:white;break-after:page;page-break-after:always}.print-page:last-child{break-after:auto;page-break-after:auto}.print-content{position:absolute;overflow:hidden}.print-content>svg{position:absolute;display:block;max-width:none}
+@media print{html,body{overflow:visible!important;height:auto!important;background:white!important}#viewport{display:none!important}#print-root{display:block!important}.print-page{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
